@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/antoniussinaga-dev/idnd/issues"
   },
-  "homepage": "https://github.com/antoniussinaga-dev/idnd#readme"
+  "homepage": "https://github.com/antoniussinaga-dev/idnd#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/antoniussinaga-dev"
+  }
 }
