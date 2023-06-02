@@ -1,0 +1,23 @@
+{
+  "name": "idnd",
+  "version": "0.0.1",
+  "description": "idnd is a react library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniussinaga-dev/idnd.git"
+  },
+  "author": "Antonius Sinaga",
+  "license": "MIT",
+  "keywords": [
+    "idnd",
+    "idn.design"
+  ],
+  "bugs": {
+    "url": "https://github.com/antoniussinaga-dev/idnd/issues"
+  },
+  "homepage": "https://github.com/antoniussinaga-dev/idnd#readme"
+}
