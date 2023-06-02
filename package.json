@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/antoniussinaga-dev/idnd#readme",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/antoniussinaga-dev"
+    "registry": "https://registry.npmjs.org/"
   }
 }
