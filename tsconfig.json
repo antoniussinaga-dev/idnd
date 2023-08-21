@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["react", "react-dom"],
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "declaration": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+  },
+  "typeRoots": ["./typings", "./node_modules/@types"],
+  "paths": {
+    "@components/*": ["dist/*"],
+    "@utils/*": ["dist/@hook/utils/*"],
+    "@types": ["dist/*"],
+    "idnd": ["dist/*"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "idnd"]
+}

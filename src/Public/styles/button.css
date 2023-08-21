@@ -1,0 +1,67 @@
+
+.idnd-btn {
+    box-sizing: border-box;
+    outline-style: none;
+    border-style: none;
+    font-family: 'inter' sans-serif;
+    font-weight: bold;
+    padding: 6px 15px;
+    color: #008BFA;
+    display: 'flex';
+    align-items: center;
+    font-size: 16px;
+    border-radius: 4px;
+    border: solid;
+    cursor: pointer;
+    border-width: 1px;
+    border-color: #0070CC;
+    margin: 3px;
+
+    position: relative;
+    vertical-align: middle;
+}
+
+
+/* VARIANT */
+.idnd-btn-primary {
+    background-color: #008BFA;
+    color: #ffff;
+}
+
+/* ACTION */
+.idnd-btn-hover {
+    border-color: #0070CC;
+    background-color: #1A98FF;
+}
+.idnd-btn-active {
+    background-color: #0082ED;
+}
+.idnd-btn-focused {
+    background-color: #008BFA;
+    box-shadow: 0 0 1px 3px #ABD9FE;
+}
+
+
+.idnd-ripple {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    display: flex;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 50%;
+    animation: ripple 0.7s linear infinite;
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.4;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
