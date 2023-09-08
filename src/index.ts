@@ -8,9 +8,7 @@ export { default as useLocation } from "./@Hook/device/useLocation";
 
 // Components
 
-
 export { default as Grid } from "./View/grid/Grid";
 export { Form } from "./form/index";
-export { Modal } from "./modal/index";
 export { Button } from "./button/index";
-export { Checkbox, CheckboxProps } from "./checkbox/index";
+
