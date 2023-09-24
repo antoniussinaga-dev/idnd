@@ -1,26 +1,25 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "esnext",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "lib": ["dom", "ES2017", "dom.iterable", "esnext"],
-    "types": ["react", "react-dom"],
-    "moduleResolution": "node",
-    "jsx": "react",
+    "baseUrl": "./components",
     "declaration": true,
-    "rootDir": "./src",
-    "outDir": "./dist",
+    "outDir": "dist",
+    "strictNullChecks": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "target": "es6",
+    "lib": ["dom", "es2017"],
+    "skipLibCheck": true,
+    "stripInternal": true
   },
-  "typeRoots": ["./typings", "./node_modules/@types"],
-  "paths": {
-    "@components/*": ["dist/*"],
-    "@utils/*": ["dist/@hook/utils/*"],
-    "@types": ["dist/*"],
-    "idnd": ["dist/*"]
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "idnd"]
+  "include": ["components/**/*"],
+  "exclude": ["node_modules", "lib", "es"],
+  "declarationDir": "dist/types"
 }

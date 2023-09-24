@@ -1,13 +1,17 @@
 {
   "name": "idnd",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "idnd is a react library",
-  "main": "./dist/index.js",
-  "types": "./dist",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "./dist/*"
+  ],
+  "types": "./dist/types/index.d.ts",
   "scripts": {
     "dev": "webpack --watch",
     "build": "webpack",
-    "tsc": "tsc"
+    "tsc": "rm -r dist && tsc -w"
   },
   "repository": {
     "type": "git",
@@ -27,20 +31,16 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@types/react": "^17.0.38",
-    "@types/react-dom": "^17.0.11",
-    "babel-loader": "^9.1.3",
-    "css-loader": "^6.8.1",
-    "file-loader": "^6.2.0",
-    "style-loader": "^3.3.3",
-    "ts-loader": "^9.4.4",
-    "typescript": "^5.1.6",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "styled-components": "^6.0.8",
+    "@types/styled-components": "^5.0.0",
+    "typescript": "^5.1.6"
   },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.10.1"
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
   }
 }
